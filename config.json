@@ -1,0 +1,12 @@
+{
+    "agents": [
+        {
+            "name": "BREAD",
+            "token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiQlJFQUQiLCJ2ZXJzaW9uIjoidjIuMi4wIiwicmVzZXRfZGF0ZSI6IjIwMjQtMDQtMDkiLCJpYXQiOjE3MTQyMzc4NTcsInN1YiI6ImFnZW50LXRva2VuIn0.CYfTtktkIYxi5qTEMcy3NqduPgc22mtYbkSNl74GdVTtVcJ97pO1qDDXhmrFo92g-Q0b_2kqo08F1I2AzVwSNnOlJmAOpM93lZm85rs3F13_CItF2GEgDt8RAviThMJPs43Zhm70B0rZkMA0uBIaFg-Z7ak_FjycK5k9oyJ9m5qPhjPxipxU6K0SXG23tjb9dcx58bMK4gdLJ5GVG14NBsJD87Vn4SZNKcGurO6tWNWRCGJoUKpcaAVreNKfHI_Fb35p0Uwn3dLDxzKbVjwhyOu4NRAioVRn2OyA6gHp8lyxraAzlPPOnqn5v92vfJv7pyz0-AKvuJwfy0gkmqD6Fw"
+        },
+        {
+            "name": "ICE-SPICE",
+            "token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiSUNFX1NQSUNFIiwidmVyc2lvbiI6InYyLjIuMCIsInJlc2V0X2RhdGUiOiIyMDI0LTA0LTA5IiwiaWF0IjoxNzEzNDk2NDk3LCJzdWIiOiJhZ2VudC10b2tlbiJ9.juLlW-JB3j8kgAIzA2W-TFG5_kbP9qjUDDHMNnyXxNEzKaaNHRWd6zyaWpJ6gQnfqEKXm93lNdIRvELJSNOATsgv-oCfrss6mzxmSHsbNBbUHZEUcxQ3dTvQtrjfggOv0NZVoJqMdQZIEw1NK4iJ_k-6o4Q_T_ltgP4InccckoNHjTAj66tc8aI6dSqwFwO69aFFdGNoEuEQQc0T9DeJVr0Xz_SfWi0yzky6zadPUjN-hD9Onc5zB1d22JZtL6GFa4OC78NpU-2Skox_fIJrhamwz1PPincHZNjkX3BtGyJdITc8QphXxLZ1rKicxNLMnJdVXU_SVa6OFKsqJh_SEw"
+        }
+    ]
+}
