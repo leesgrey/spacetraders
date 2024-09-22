@@ -1,3 +1,4 @@
+import api
 class Agent:
     def __init__(self, agent_json):
         self.symbol = agent_json['symbol']
@@ -8,47 +9,17 @@ class Agent:
         self.ships = []
         self.contracts = []
 
-        ships = get_ships()
-        for ship in ships['data']:
+        ships_data = api.get_ships()
+        for ship in ships_data:
             self.ships.append(Ship(ship))
-        print(self.ships)
-        
-        contracts = get_contracts()
-        print(contracts)
-        for contract in contracts['data']:
+
+        contracts_data = api.get_contracts()
+        for contract in contracts_data:
             self.contracts.append(Contract(contract))
-        print(self.contracts)
 
-    def __rich__(self):
-        display_str = dedent(f'''\
-            Symbol: {self.symbol}
-            Headquarters: {self.headquarters}
-            Starting faction: {self.starting_faction}
-            Ship count: {self.ship_count}
-            Credits: {self.credits}''')
+    def __repr__(self):
+        return f"Agent({self.symbol})"
 
-        ship_table = Table(title="SHIPS")
-        ship_table.add_column("symbol")
-        ship_table.add_column("waypoint")
-        ship_table.add_column("status")
-        ship_table.add_column("units")
-        ship_table.add_column("capacity")
-
-        for ship in self.ships:
-            ship_table.add_row(ship.symbol, ship.nav['waypointSymbol'], ship.nav['status'], str(ship.cargo['units']), str(ship.cargo['capacity']))
-
-        contract_table = Table(title="CONTRACTS") 
-        contract_table.add_column("id")
-        contract_table.add_column("type")
-        contract_table.add_column("accepted")
-        contract_table.add_column("fulfilled")
-        contract_table.add_column("expiration")
-        contract_table.add_column("deadline_to_accept")
-
-        for contract in self.contracts:
-            contract_table.add_row(contract.id, contract.type, str(contract.accepted), str(contract.fulfilled), contract.expiration, contract.deadline_to_accept)
-
-        return Group(Panel.fit(display_str, title="AGENT SUMMARY"), ship_table, contract_table)
 
 class Ship:
     def __init__(self, ship_json):
